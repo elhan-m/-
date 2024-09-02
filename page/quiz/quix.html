@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mt-5">Todo List</h1>
+        <div class="filters">
+            <button class="btn btn-primary" onclick="filterTodos(true)">Show Completed</button>
+            <button class="btn btn-secondary" onclick="filterTodos(false)">Show Incomplete</button>
+            <button class="btn btn-info" onclick="showTodos(todos)">Show All</button>
+            <input type="text" id="search" class="form-control" placeholder="Search by title..." oninput="searchTodos(this.value)">
+        </div>
+        <div id="root" style="display: flex; justify-content: space-between; flex-wrap: wrap;"></div>
+    </div>
+
+    <script src="quiz.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>

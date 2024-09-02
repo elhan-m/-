@@ -1,0 +1,23 @@
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+.card-body p {
+    margin: 5px 0;
+}
+
+.filters {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
